@@ -80,6 +80,6 @@ def user_login(request):
             login(request,user)
             return HttpResponseRedirect(reverse("blog:form_name",))
         else:
-            return HttpResponse("invalid username and password")
+            return HttpResponse("Invalid Username and Password")
     else :
         return render(request,"blog/login.html",{})

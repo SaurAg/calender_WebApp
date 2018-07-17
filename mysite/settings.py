@@ -26,7 +26,7 @@ SECRET_KEY = ')676eq#8i+t_5ngvi920ic13l7%p_x_y1szh!qyf%hh+smf@t*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ec2-13-232-65-124.ap-south-1.compute.amazonaws.com']
 
 
 # Application definition
@@ -56,7 +56,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mysite.urls'
-STATIC_URL = '/static/'
+STATIC_URL = '/blog/static/blog/'
+STATIC_ROOT = '/home/ubuntu/static/'
 STATICFILES_DIRS=[STATIC_DIR,]
 #MEDIA
 MEDIA_ROOT=MEDIA_DIR
