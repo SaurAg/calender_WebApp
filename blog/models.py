@@ -12,13 +12,13 @@ class input(models.Model):
     def __str__(self):
         return  self.event_description
 
-class UserProfileInfo(models.Model):
+# class UserProfileInfo(models.Model):
 
-    user = models.OneToOneField(User,on_delete=True)
-    picture = models.ImageField(upload_to="profile_pics",blank=True)
+#     user = models.For(User,on_delete=True)
+#     picture = models.ImageField(upload_to="profile_pics",blank=True)
 
-    def __str__(self):
-        return self.user.username
+#     def __str__(self):
+#         return self.user.username
 
 
 

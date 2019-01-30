@@ -1,5 +1,5 @@
 from django.contrib import admin
-from blog.models import input,UserProfileInfo,User
+from blog.models import input,User
 
 admin.site.register(input)
-admin.site.register(UserProfileInfo)
+# admin.site.register(UserProfileInfo)

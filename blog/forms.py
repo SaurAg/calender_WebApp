@@ -1,15 +1,15 @@
 from django import forms
 from django.core import validators
-from blog.models import input,UserProfileInfo,User
+from blog.models import input,User
 
 
 
 
-class FormName(forms.Form):
-    name=forms.CharField()
-    email=forms.EmailField()
-    text=forms.CharField()
-    botcatcher=forms.CharField(required=False,widget=forms.HiddenInput,)
+# class FormName(forms.Form):
+#     name=forms.CharField()
+#     email=forms.EmailField()
+#     text=forms.CharField()
+#     botcatcher=forms.CharField(required=False,widget=forms.HiddenInput,)
 
 
 class AuthorForm(forms.ModelForm):
@@ -30,7 +30,7 @@ class Authentic(forms.ModelForm):
         model = User
         fields =("username","password","first_name","last_name","email",)
 
-class UserProfile(forms.ModelForm):
-    class Meta():
-        model = UserProfileInfo
-        fields = ("picture",)
+# class UserProfile(forms.ModelForm):
+#     class Meta():
+#         model = UserProfileInfo
+#         fields = ("picture",)
