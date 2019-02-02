@@ -2,7 +2,7 @@
 
 NAME="django_app"                                   # Name of the application
 DJANGODIR=/home/ubuntu/calender_WebApp              # Django project directory
-SOCKFILE=/home/ubuntu/django_env/run/gunicorn.sock  # we will communicte using this unix socket
+SOCKFILE=/home/ubuntu/cwa_env/run/gunicorn.sock  # we will communicte using this unix socket
 USER=ubuntu                                         # the user to run as
 GROUP=ubuntu                                        # the group to run as
 NUM_WORKERS=3                                       # how many worker processes should Gunicorn spawn
@@ -13,7 +13,7 @@ echo "Starting $NAME as `whoami`"
 # Activate the virtual environment
 
 cd $DJANGODIR
-source /home/ubuntu/django_env/bin/activate
+source /home/ubuntu/cwa_env/bin/activate
 export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
 export PYTHONPATH=$DJANGODIR:$PYTHONPATH
 

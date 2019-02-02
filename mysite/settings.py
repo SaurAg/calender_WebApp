@@ -24,7 +24,7 @@ MEDIA_DIR=os.path.join(BASE_DIR,"media")
 SECRET_KEY = ')676eq#8i+t_5ngvi920ic13l7%p_x_y1szh!qyf%hh+smf@t*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -57,7 +57,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 STATIC_URL = '/blog/static/blog/'
-STATIC_ROOT = '/home/ubuntu/static/'
+STATIC_ROOT = '/home/ubuntu/calender_WebApp/static/'
 STATICFILES_DIRS=[STATIC_DIR,]
 #MEDIA
 MEDIA_ROOT=MEDIA_DIR
@@ -130,7 +130,7 @@ AUTH_PASSWORD_VALIDATORS=[
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
